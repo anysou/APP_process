@@ -36,11 +36,25 @@ import java.util.Random;
  启动百度极速版的Activity：adb shell am start -n com.baidu.searchbox.lite/com.baidu.searchbox.MainActivity
  点击输入框位置坐标:adb shell input tap 460 410
  (注意输入法要切换成 Sigma键盘)
+
+ adb shell input keyevent code详解   https://www.cnblogs.com/chengchengla1990/p/4515108.html
+
  输入文字： adb shell input text https://na.mbd.baidu.com/je3rqk2?f=cp
  回车： adb shell input keyevent 66
  从下到上滑动： adb shell input swipe  200 1800  200 0
  从左到右滑动： adb shell input swipe  100 1000  900 1000
  返回键： adb shell input keyevent 4
+ input keyevent 3    // Home
+ input keyevent 4    // Back
+ input keyevent 19  //Up
+ input keyevent 20  //Down
+ input keyevent 21  //Left
+ input keyevent 22  //Right
+ input keyevent 23  //Select/Ok
+ input keyevent 24  //Volume+
+ input keyevent 25  // Volume-
+ input keyevent 82  // Menu 菜单
+
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int i = 0;
     //adb shell dumpsys window windows | findstr mCurrentFocus > APK.TXT
-    //adb shell am start -n
+    //adb shell am start -n （-n 标识要指定包/类名）
     //adb shell monkey -p com.milecn.milevideo -c android.intent.category.LAUNCHER 1
     //adb shell am force-stop com.milecn.milevideo
     private String[] video_name = {"快手","刷宝","抖音","火山","快看点","秘乐"};

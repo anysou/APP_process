@@ -23,6 +23,8 @@ ADB shell 可以调用 app_process，同时有执行shell很多功能的权限�
 大家都知道 [Android 调试桥 (adb)](https://developer.android.com/studio/command-line/adb.html) 是一个通用命令行工具，其允许您与模拟器实例或连接的 Android 设备进行通信。它可为各种设备操作提供便利，如安装和调试应用，并提供对 Unix shell（可用来在模拟器或连接的设备上运行各种命令）的访问。
 [adb详解](https://github.com/anysou/awesome-adb)
 
+adb驱动，adb工具包（推荐到adbshell.com下载)
+
 比如模拟按键点击：
 
 ```java
@@ -288,7 +290,11 @@ D:\AndroidSpace\app_process-shell-use\app\src\main\java>dx --dex --output=D:\hel
 
 问题一： 手机通过连接一次连接PC，完成程序adb推入，并通过 shell 调用 app_process 执行服务程序。如何将该程序变成系统服务，开机自启动、且不死。
 
-问题二：是否有办法不通过连接PC，通过APP启动实现调用 app_process 执行服务程序。
+问题二：是否有办法不通过连接PC，通过APP启动实现调用 app_process 执行服务程序。（应该需要ROOT权限）
+
+### 新发现
+
+google 开发了 uiautomator2 ，并可兼容其他语言来实现自动化测试的功能。其中涉及用到的ATX APP某种意义上课完全替代本文功能。
 
 查考：
 
