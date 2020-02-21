@@ -296,6 +296,10 @@ D:\AndroidSpace\app_process-shell-use\app\src\main\java>dx --dex --output=D:\hel
 
 google 开发了 uiautomator2 ，并可兼容其他语言来实现自动化测试的功能。其中涉及用到的ATX APP某种意义上课完全替代本文功能。
 
+uiautomator2 还支持 Python. 手机里使用 Python 有  Qpython 、Pydroid、Termux（是一种Linux系统）
+
+（目前Qpython的 python2 可完全支持 uiautomator2、但 python3 不能支持 uiautomator2 里的 lxml 无法使用xpath ）
+
 查考：
 
 [使用 app_process 来调用高权限 API](https://haruue.moe/blog/2017/08/30/call-privileged-api-with-app-process/)
