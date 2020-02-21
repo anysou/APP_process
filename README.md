@@ -300,6 +300,10 @@ uiautomator2 还支持 Python. 手机里使用 Python 有  Qpython 、Pydroid、
 
 （目前Qpython的 python2 可完全支持 uiautomator2、但 python3 不能支持 uiautomator2 里的 lxml 无法使用xpath ）
 
+（Pydroid 没有安装成功 uiautomator2 ）
+
+（Termux 可行）
+
 查考：
 
 [使用 app_process 来调用高权限 API](https://haruue.moe/blog/2017/08/30/call-privileged-api-with-app-process/)
